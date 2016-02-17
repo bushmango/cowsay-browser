@@ -1,6 +1,6 @@
 {
   "name": "cowsay",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "cowsay is a configurable talking cow",
   "keywords": [
     "cow",
@@ -10,11 +10,11 @@
     "talking",
     "ASCII"
   ],
-  "homepage": "https://github.com/piuccio/cowsay",
+  "homepage": "https://github.com/bushmango/cowsay-browser",
   "author": {
-    "name": "Fabio Crisci",
-    "email": "piuccio@gmail.com",
-    "url": "https://github.com/piuccio/"
+    "name": "Stevie Bushman",
+    "email": "bushmango@gmail.com",
+    "url": "https://github.com/bushmango/"
   },
   "main": "./index",
   "bin": {
@@ -23,10 +23,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/piuccio/cowsay.git"
+    "url": "https://github.com/bushmango/cowsay-browser.git"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "build-cows": "node build-cows.js"
   },
   "dependencies": {
     "optimist": "~0.6.1"

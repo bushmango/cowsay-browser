@@ -17,9 +17,36 @@ This project is a translation in JavaScript of the original program and an attem
 
 ## Install
 
-    npm install -g cowsay
+    npm install cowsay-browser
+    
+## Usage as a module
 
-## Usage
+cowsay can be used as any other npm dependency
+
+    var cowsay = require("cowsay-browser");
+
+    console.log(cowsay.say({
+    	text : "I'm a moooodule",
+    	e : "oO",
+    	T : "U "
+    }));
+
+    // or cowsay.think()
+
+````
+ _________________
+( I'm a moooodule )
+ -----------------
+        o   ^__^
+         o  (oO)\_______
+            (__)\       )\/\
+             U  ||----w |
+                ||     ||
+````
+
+## Usage as CLI
+
+> You have to install `cowsay-browser` globally to use it outside your current project : `npm install -g cowsay-browser`
 
     cowsay JavaScript FTW!
 
@@ -46,30 +73,7 @@ It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `c
              """"          """"""" 
 ````
 
-## Usage as a module
 
-cowsay can be used as any other npm dependency
-
-    var cowsay = require("cowsay");
-
-    console.log(cowsay.say({
-    	text : "I'm a moooodule",
-    	e : "oO",
-    	T : "U "
-    }));
-
-    // or cowsay.think()
-
-````
- _________________
-( I'm a moooodule )
- -----------------
-        o   ^__^
-         o  (oO)\_______
-            (__)\       )\/\
-             U  ||----w |
-                ||     ||
-````
 
 ## Pipe from standard input
 
